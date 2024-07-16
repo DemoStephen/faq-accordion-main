@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'WorkSans';
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --lightPink: hsl(275, 100%, 97%);
+    --grayishPurple: hsl(292, 16%, 49%);
+    --darkPurple: hsl(292, 42%, 14%);
+    --fontSize: 1rem;
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-color: var(--lightPink);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: top;
+    color: var(--darkPurple);
+    font-family: 'WorkSans', sans-serif;
+    font-size: var(--fontSize);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    font-weight: 600;
+}
+main{
+    background-color: var(--white);
+    padding: 2rem 1.5rem;
+    border-radius: 0.75rem;
+    width: clamp(30.5rem, calc(100% - 40px), 32.5rem);
+    margin: 0 0 3rem 0;
+}
+h1{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1.5rem 0;
+}
+details+details{
+    margin: 0.85rem 0 0 0;
+}
+summary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+details p{
+    padding: 0.3rem 1rem 0 0;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    word-spacing: 1.5px;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
