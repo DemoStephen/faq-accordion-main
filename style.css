@@ -34,7 +34,7 @@ body{
 }
 main{
     background-color: var(--white);
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     border-radius: 0.75rem;
     width: clamp(30.5rem, calc(100% - 40px), 32.5rem);
     margin: 0 0 3rem 0;
@@ -45,6 +45,7 @@ h1{
     align-items: center;
     gap: 0.75rem;
     margin: 0 0 1.5rem 0;
+    font-size: 3rem;
 }
 details+details{
     margin: 0.85rem 0 0 0;
